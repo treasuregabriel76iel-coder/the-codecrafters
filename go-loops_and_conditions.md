@@ -1,4 +1,4 @@
-# Go For Loops
+# GO FOR LOOPS
 
 The for loop loops through a block of code a specified number of times.
 
@@ -33,3 +33,23 @@ The break statement is used to break/terminate the loop execution.
 # Nested Loops
 
 It is a loop inside another loop 
+
+# GO CONDITIONS
+
+A condition can be either true or false.
+
+Go supports the usual comparison operators from mathematics:
+
+    Less than <
+    Less than or equal <=
+    Greater than >
+    Greater than or equal >=
+    Equal to ==
+    Not equal to !=
+
+# GO CONDITIONAL STATEMENTS
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+
