@@ -45,8 +45,19 @@ func title(words string) string {
 	return strings.Join(text, " ")
 }
 
-// func snake(words string) string {
-// }
+func snake(words []string) string {
+	c := ""
+	d := ""
+	for i := 0; i < len(words); i++ {
+		c += words[i] + " "
+	}
+	for j := 0; j < len(c)-1; j++ {
+		d += string(c[j])
+	}
+	d = strings.ToLower(d)
+	d = strings.ReplaceAll(d, " ", "_")
+	return d
+}
 func reverse(s string) string {
 	words := strings.Fields(s)
 	for i, w := range words {
@@ -99,8 +110,9 @@ func main() {
 			fmt.Println(cap(text))
 		case "title":
 			fmt.Println(title(text))
-		// case "snake":
-		// 	fmt.Println(snake(text))
+		case "snake":
+			texts := strings.Fields(text)
+			fmt.Println(snake(texts))
 		case "rev":
 			fmt.Println(reverse(text))
 		default:
