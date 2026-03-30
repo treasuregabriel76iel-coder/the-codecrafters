@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func enter() {
+func main() {
 	const (
 		Red    = "\033[0;31m"
 		Green  = "\033[0;32m"
